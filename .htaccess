@@ -1,0 +1,8 @@
+RewriteEngene On
+RewriteCond %{SCRUOT_FILENAME} !-f 
+RewriteCond %{SCRUOT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=1 [QSA,L]
+
+Options -Indexes
+
+
